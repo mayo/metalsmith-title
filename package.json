@@ -14,7 +14,8 @@
 	},
 	"devDependencies": {
 		"mocha": "1.x",
-		"metalsmith": "0.x"
+		"metalsmith": "0.x",
+    "assert-dir-equal": "0.0.1"
 	},
 	"scripts": {
 		"test": "make test"
