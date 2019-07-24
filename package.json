@@ -1,23 +1,21 @@
 {
 	"name": "metalsmith-title",
 	"description": "A Metalsmith plugin that automatically add a title from processed file",
-	"repository": "git://github.com/OzzyCzech/metalsmith-title.git",
+	"repository": "git://github.com/mayo/metalsmith-title.git",
 	"version": "0.0.1",
 	"license": "MIT",
 	"main": "lib/index.js",
-	"dependencies": {
-		"debug": "~0.7.4"
-	},
-	"engines": {
-		"node": ">=0.8.x",
-		"npm": ">=1.1.x"
-	},
 	"devDependencies": {
-		"mocha": "1.x",
-		"metalsmith": "0.x",
-    "assert-dir-equal": "0.0.1"
+		"assert-dir-equal": "^1.1.0",
+		"eslint": "^6.1.0",
+		"eslint-config-airbnb-base": "^13.2.0",
+		"eslint-plugin-import": "^2.18.2",
+		"metalsmith": "^2.3.0",
+		"mocha": "^6.2.0"
 	},
 	"scripts": {
-		"test": "make test"
+		"test": "mocha --reporter spec",
+		"lint": "eslint lib test",
+    "testAndLint": "npm test && npm run lint"
 	}
 }
